@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+    /*background-color: grey;*/
+}
+
+.bg{
+    /* The image used */
+    background-image: url("pexels-ann-h-1762851.jpg");
+  
+    /* Full height */
+    height: 100vh; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: -1;
+}
+
+h1{
+    font-size: 70px;
+}
+h2{
+    font-size: 45px;
+}
+
+/* yellow: #D6BB73 */
+/* blue: #60B4F0 */
+
+.navbar a{
+    /*display: none; /*tmp*/
+
+    position: absolute;
+    
+    text-transform: uppercase;
+    text-decoration: none;
+
+    padding: 8px;
+    height: 78px;
+    margin: 20px;
+    border: 5px dashed #D6BB73;
+    border-radius: 30px;
+    
+    color: #D6BB73;
+    background-color: #60b4f000;
+
+    transition: 0.5s;
+}
+
+.navbar:hover a{
+    color: #60B4F0;
+    background-color: #D6BB73;
+}
+
+.navbar::after a{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.content{
+    display: block;
+    position: absolute;
+    right: 50vw;
+    top: 50vh;
+
+    color: white;
+}
+
+.block{
+    position: absolute;
+
+    width: 50vw;
+    height: 100vh;
+    left: 0;
+
+    z-index: -1;
+
+    background-color: rgb(175, 128, 255);
+}
+
+.content{
+    font-size: 30px;
+
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email{
+    text-align: left;
+
+    position: absolute;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    padding: 10px;
+    width: auto;
+
+    border: 5px dashed #60B4F0;
+    border-radius: 20px;
+
+    top: 0;
+    left: 15vw;
+
+    transition: 0.5s;
+}
+
+.discord{
+    text-align: right;
+
+    position: absolute;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    padding: 10px;
+    width: auto;
+
+    border: 5px dashed #D6BB73;
+    border-radius: 20px;
+
+    top: 0;
+    right: 15vw;
+
+    transition: 0.5s;
+}
+
+.email a{
+    text-decoration: none;
+    color: #60B4F0;
+    background-color: #d6bc7300;
+
+    transition: 0.5s;
+}
+
+.discord a{
+    text-decoration: none;
+    color: #D6BB73;
+    background-color: #60b4f000;
+
+    transition: 0.5s;
+}
+
+.discord:hover{
+    background-color: #D6BB73;
+}
+.discord:hover a{
+    color: #60B4F0;
+}
+
+.email:hover{
+    background-color: #60B4F0;
+}
+.email:hover a{
+    color: #D6BB73;
+}
